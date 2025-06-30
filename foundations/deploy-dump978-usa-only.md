@@ -74,7 +74,7 @@ Append the following lines to the end of the file \(under the `services:` sectio
       - DUMP978_SDR_PPM=${UAT_SDR_PPM}
     volumes:
       - /opt/adsb/dump978:/var/globe_history
-      - /dev:/dev:ro
+      - /dev:/dev:rw
     ports:
       - 30980:80
     tmpfs:
